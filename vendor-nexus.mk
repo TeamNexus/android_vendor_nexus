@@ -21,4 +21,4 @@ PRODUCT_COPY_FILES += \
 # Prebuilt applications
 PRODUCT_PACKAGES += \
     HTCCamera \
-	TheNexus
+	TheNexus-prebuilt
