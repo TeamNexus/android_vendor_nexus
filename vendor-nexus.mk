@@ -14,9 +14,11 @@
 # limitations under the License.
 #
 
+LOCAL_PATH=vendor/nexus
+
 # Boot-Animation
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/bootanimation.zip:system/media/bootanimation.zip
+    $(LOCAL_PATH)/media/bootanimation-kendjy-1.zip:system/media/bootanimation.zip
 
 # Prebuilt applications
 PRODUCT_PACKAGES += \
