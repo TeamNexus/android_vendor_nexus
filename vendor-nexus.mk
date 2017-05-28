@@ -33,9 +33,8 @@ PRODUCT_PACKAGES += \
 # Magisk
 PRODUCT_PACKAGES += \
 	init.magisk.rc \
-	magisk \
-	resetprop \
-	magiskpolicy
+	MagiskManager \
+	magisk
 	
 # Magisk Hide-Scripts
 PRODUCT_COPY_FILES += \
