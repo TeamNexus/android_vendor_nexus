@@ -29,3 +29,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	Substratum-prebuilt \
     ThemeInterfacer
+	
+# Magisk
+PRODUCT_PACKAGES += \
+	init.magisk.rc \
+	magisk \
+	resetprop \
+	magiskpolicy
+	
+# Magisk Hide-Scripts
+PRODUCT_COPY_FILES += \
+    packages/magisk/scripts/magiskhide/add:root/magisk/.core/magiskhide/add \
+    packages/magisk/scripts/magiskhide/disable:root/magisk/.core/magiskhide/disable \
+    packages/magisk/scripts/magiskhide/enable:root/magisk/.core/magiskhide/enable \
+    packages/magisk/scripts/magiskhide/list:root/magisk/.core/magiskhide/list \
+    packages/magisk/scripts/magiskhide/rm:root/magisk/.core/magiskhide/rm
