@@ -24,3 +24,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     HTCCamera \
 	TheNexus-prebuilt
+	
+# Substratum
+PRODUCT_PACKAGES += \
+	Substratum-prebuilt \
+    ThemeInterfacer
