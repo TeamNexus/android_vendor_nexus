@@ -23,7 +23,7 @@ PRODUCT_COPY_FILES += \
 # Prebuilt applications
 PRODUCT_PACKAGES += \
     HTCCamera \
-	TheNexus-prebuilt
+	TheNexus
 	
 # Substratum
 PRODUCT_PACKAGES += \
