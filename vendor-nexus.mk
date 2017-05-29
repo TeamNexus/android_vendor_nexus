@@ -33,7 +33,7 @@ PRODUCT_PACKAGES += \
 # Magisk
 PRODUCT_PACKAGES += \
 	init.magisk.rc \
-	MagiskManager \
+	MagiskManager-prebuilt \
 	magisk
 	
 # Magisk Hide-Scripts
