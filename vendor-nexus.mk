@@ -16,26 +16,21 @@
 
 LOCAL_PATH=vendor/nexus
 
+# Applications
+PRODUCT_PACKAGES += \
+    HTCCamera \
+    TheNexus
+
 # Boot-Animation
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/bootanimation-1.zip:system/media/bootanimation.zip
 
-# Prebuilt applications
-PRODUCT_PACKAGES += \
-    HTCCamera \
-	TheNexus
-	
-# Substratum
-PRODUCT_PACKAGES += \
-	Substratum-prebuilt \
-    ThemeInterfacer
-	
 # Magisk
 PRODUCT_PACKAGES += \
-	init.magisk.rc \
-	MagiskManager-prebuilt \
-	magisk
-	
+    init.magisk.rc \
+    MagiskManager-prebuilt \
+    magisk
+
 # Magisk Hide-Scripts
 PRODUCT_COPY_FILES += \
     packages/magisk/scripts/magiskhide/add:root/magisk/.core/magiskhide/add \
@@ -43,3 +38,8 @@ PRODUCT_COPY_FILES += \
     packages/magisk/scripts/magiskhide/enable:root/magisk/.core/magiskhide/enable \
     packages/magisk/scripts/magiskhide/list:root/magisk/.core/magiskhide/list \
     packages/magisk/scripts/magiskhide/rm:root/magisk/.core/magiskhide/rm
+
+# Substratum
+PRODUCT_PACKAGES += \
+    Substratum-prebuilt \
+    ThemeInterfacer
