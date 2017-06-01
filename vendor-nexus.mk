@@ -39,6 +39,10 @@ PRODUCT_COPY_FILES += \
     packages/magisk/scripts/magiskhide/list:root/magisk/.core/magiskhide/list \
     packages/magisk/scripts/magiskhide/rm:root/magisk/.core/magiskhide/rm
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+	init.nexus.rc
+
 # Substratum
 PRODUCT_PACKAGES += \
     Substratum-prebuilt \
