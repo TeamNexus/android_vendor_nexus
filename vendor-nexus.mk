@@ -29,7 +29,7 @@ PRODUCT_COPY_FILES += \
 # Magisk
 PRODUCT_PACKAGES += \
     init.magisk.rc \
-    MagiskManager-prebuilt \
+    MagiskManager \
     magisk
 
 # Magisk Hide-Scripts
@@ -46,5 +46,5 @@ PRODUCT_PACKAGES += \
 
 # Substratum
 PRODUCT_PACKAGES += \
-    Substratum-prebuilt \
+    Substratum \
     ThemeInterfacer
