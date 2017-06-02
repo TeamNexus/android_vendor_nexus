@@ -18,6 +18,7 @@ LOCAL_PATH=vendor/nexus
 
 # Applications
 PRODUCT_PACKAGES += \
+    Firefox \
     HTCCamera \
     NexusLauncher \
     TheNexus
