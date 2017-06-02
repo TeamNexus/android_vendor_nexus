@@ -20,7 +20,6 @@ LOCAL_PATH=vendor/nexus
 PRODUCT_PACKAGES += \
     Firefox \
     HTCCamera \
-    NexusLauncher \
     TheNexus
 
 # Boot-Animation
