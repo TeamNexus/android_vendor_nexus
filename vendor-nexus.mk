@@ -26,7 +26,7 @@ PRODUCT_PACKAGES += \
 ##################
 # Boot-Animation
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/bootanimation-1.zip:system/media/bootanimation.zip
+    $(LOCAL_PATH)/media/bootanimation-2.zip:system/media/bootanimation.zip
 
 ##################
 # Magisk
