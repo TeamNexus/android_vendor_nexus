@@ -16,34 +16,32 @@
 
 LOCAL_PATH=vendor/nexus
 
+##################
 # Applications
 PRODUCT_PACKAGES += \
     Firefox \
     HTCCamera \
     TheNexus
 
+##################
 # Boot-Animation
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/bootanimation-1.zip:system/media/bootanimation.zip
 
+##################
 # Magisk
 PRODUCT_PACKAGES += \
-    init.magisk.rc \
-    MagiskManager \
-    magisk
+	MagiskManager
 
-# Magisk Hide-Scripts
 PRODUCT_COPY_FILES += \
-    packages/magisk/scripts/magiskhide/add:root/magisk/.core/magiskhide/add \
-    packages/magisk/scripts/magiskhide/disable:root/magisk/.core/magiskhide/disable \
-    packages/magisk/scripts/magiskhide/enable:root/magisk/.core/magiskhide/enable \
-    packages/magisk/scripts/magiskhide/list:root/magisk/.core/magiskhide/list \
-    packages/magisk/scripts/magiskhide/rm:root/magisk/.core/magiskhide/rm
+    $(LOCAL_PATH)/addons/magisk-patched.zip:system/addon.d/magisk.zip
 
+##################
 # Ramdisk
 PRODUCT_PACKAGES += \
 	init.nexus.rc
 
+##################
 # Substratum
 PRODUCT_PACKAGES += \
     Substratum \
