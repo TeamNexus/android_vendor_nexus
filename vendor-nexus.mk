@@ -34,7 +34,7 @@ PRODUCT_PACKAGES += \
 	MagiskManager
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/addons/magisk-patched.zip:system/addon.d/magisk.zip
+    $(LOCAL_PATH)/addons/magisk.zip:system/addon.d/magisk.zip
 
 ##################
 # Ramdisk
