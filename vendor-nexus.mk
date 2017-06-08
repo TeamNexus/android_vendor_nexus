@@ -19,6 +19,7 @@ LOCAL_PATH=vendor/nexus
 ##################
 # Applications
 PRODUCT_PACKAGES += \
+    FDroid \
     Firefox \
     HTCCamera \
     TheNexus
