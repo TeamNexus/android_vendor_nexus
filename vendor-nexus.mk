@@ -35,14 +35,6 @@ PRODUCT_PACKAGES += \
     FDroidPrivilegedExtension
 
 ##################
-# Magisk
-PRODUCT_PACKAGES += \
-	MagiskManager
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/addons/magisk.zip:system/addon.d/magisk.zip
-
-##################
 # Ramdisk
 PRODUCT_PACKAGES += \
 	init.nexus.rc
