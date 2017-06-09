@@ -19,7 +19,6 @@ LOCAL_PATH=vendor/nexus
 ##################
 # Applications
 PRODUCT_PACKAGES += \
-    FDroid \
     Firefox \
     HTCCamera \
     TheNexus
@@ -28,6 +27,12 @@ PRODUCT_PACKAGES += \
 # Boot-Animation
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/bootanimation-2.zip:system/media/bootanimation.zip
+
+##################
+# F-Droid
+PRODUCT_PACKAGES += \
+    FDroid \
+    FDroidPrivilegedExtension
 
 ##################
 # Magisk
