@@ -36,9 +36,6 @@ PRODUCT_PACKAGES += \
 
 ##################
 # Magisk
-PRODUCT_PACKAGES += \
-	MagiskManager
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/addons/magisk.zip:system/addon.d/magisk.zip
 
