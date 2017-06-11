@@ -20,4 +20,6 @@ LOCAL_PATH=vendor/nexus
 # Superuser
 ifneq ($(AOKP_VERSION),)
 WITH_SU=true
+else ifneq ($(AICP_VERSION),)
+WITH_SU=true
 endif

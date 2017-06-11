@@ -38,8 +38,10 @@ PRODUCT_PACKAGES += \
 # Magisk
 ifeq ($(RR_VERSION),)
 ifeq ($(AOKP_VERSION),)
+ifeq ($(AICP_VERSION),)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/addons/magisk.zip:system/addon.d/magisk.zip
+endif
 endif
 endif
 
@@ -69,6 +71,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 else ifneq ($(AOKP_VERSION),)
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.nexus.otarom=AOKP
+else ifneq ($(AICP_VERSION),)
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.nexus.otarom=AICP
 else
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.nexus.otarom=unknown
