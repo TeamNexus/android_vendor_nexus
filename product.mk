@@ -57,3 +57,19 @@ ifneq ($(NEXUS_VERSION),)
 PRODUCT_PACKAGES += \
     ThemeInterfacer
 endif
+
+##################
+# TheNexus OTA
+ifneq ($(NEXUS_VERSION),)
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.nexus.otarom=NexusOS
+else ifneq ($(RR_VERSION),)
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.nexus.otarom=ResurrectionRemix
+else ifneq ($(AOKP_VERSION),)
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.nexus.otarom=AOKP
+else
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.nexus.otarom=unknown
+endif
