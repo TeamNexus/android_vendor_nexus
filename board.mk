@@ -18,4 +18,6 @@ LOCAL_PATH=vendor/nexus
 
 ##################
 # Superuser
-# WITH_SU=true
+ifneq ($(AOKP_VERSION),)
+WITH_SU=true
+endif

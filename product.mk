@@ -37,8 +37,10 @@ PRODUCT_PACKAGES += \
 ##################
 # Magisk
 ifeq ($(RR_VERSION),)
+ifeq ($(AOKP_VERSION),)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/addons/magisk.zip:system/addon.d/magisk.zip
+endif
 endif
 
 ##################
