@@ -18,4 +18,4 @@ LOCAL_PATH=vendor/nexus
 
 ##################
 # Superuser
-WITH_SU=true
+# WITH_SU=true

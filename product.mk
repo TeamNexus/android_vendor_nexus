@@ -36,8 +36,10 @@ PRODUCT_PACKAGES += \
 
 ##################
 # Magisk
+ifeq ($(RR_VERSION),)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/addons/magisk.zip:system/addon.d/magisk.zip
+endif
 
 ##################
 # Ramdisk
@@ -47,5 +49,9 @@ PRODUCT_PACKAGES += \
 ##################
 # Substratum
 PRODUCT_PACKAGES += \
-    Substratum \
+    Substratum
+
+ifneq ($(NEXUS_VERSION),)
+PRODUCT_PACKAGES += \
     ThemeInterfacer
+endif
