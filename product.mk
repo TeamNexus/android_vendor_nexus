@@ -35,14 +35,10 @@ PRODUCT_PACKAGES += \
     FDroidPrivilegedExtension
 
 ##################
-# Magisk
-ifeq ($(RR_VERSION),)
+# Magisk (AOKP does not support Magisk)
 ifeq ($(AOKP_VERSION),)
-ifeq ($(AICP_VERSION),)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/addons/magisk.zip:system/addon.d/magisk.zip
-endif
-endif
 endif
 
 ##################
