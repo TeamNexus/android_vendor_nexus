@@ -60,16 +60,19 @@ endif
 ifneq ($(NEXUS_VERSION),)
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.nexus.otarom=NexusOS
-else ifneq ($(RR_VERSION),)
+endif
+
+ifneq ($(RR_VERSION),)
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.nexus.otarom=ResurrectionRemix
-else ifneq ($(AOKP_VERSION),)
+endif
+
+ifneq ($(AOKP_VERSION),)
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.nexus.otarom=AOKP
-else ifneq ($(AICP_VERSION),)
+endif
+
+ifneq ($(AICP_VERSION),)
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.nexus.otarom=AICP
-else
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.nexus.otarom=unknown
 endif
