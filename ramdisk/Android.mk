@@ -17,9 +17,17 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE		:= init.nexus.rc
-LOCAL_MODULE_TAGS	:= optional eng
-LOCAL_MODULE_CLASS	:= ETC
-LOCAL_SRC_FILES		:= init.nexus.rc
-LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
+LOCAL_MODULE       := init.nexus.rc
+LOCAL_MODULE_TAGS  := optional eng
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := init.nexus.rc
+LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE       := safetynetfix
+LOCAL_MODULE_TAGS  := optional eng
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := sbin/safetynetfix
+LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)/sbin
 include $(BUILD_PREBUILT)

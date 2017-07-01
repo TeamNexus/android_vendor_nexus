@@ -13,3 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+#
+# Universal SafetyNet Fix (https://forum.xda-developers.com/apps/magisk/xiaomi-safetynet-fix-t3600431)
+# directly integrated into the ramdisk
+#
+on post-fs-data
+    exec u:r:su:s0 root root -- /sbin/safetynetfix
+    write /dev/.safetynetfix "done"
