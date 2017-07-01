@@ -60,8 +60,10 @@ check_safetynet() {
     [ "$(magisk -v | grep '13.0(.*):MAGISK' 2>/dev/null)" ] && {
         while :; do
             [ "$(grep 'proc_monitor:.*zygote.*ns=mnt:\[.*\]' '/cache/magisk.log')" ] && break || {
-                magiskhide --disable; sleep 1
-                magiskhide --enable; }
+				[ "$(getprop persist.magisk.hide)" != "0" ] && {
+					magiskhide --disable; sleep 1
+					magiskhide --enable; }
+			}
             sleep 3
         done; }
 
@@ -85,8 +87,8 @@ elif [ -f "/data/magisk/magisk" ]; then RESETPROP="/data/magisk/magisk $RESETPRO
 elif [ -f "/magisk/.core/bin/resetprop" ]; then RESETPROP="/magisk/.core/bin/$RESETPROP"
 elif [ -f "/data/magisk/resetprop" ]; then RESETPROP="/data/magisk/$RESETPROP"; fi
 
-$RESETPROP "ro.build.fingerprint" "Xiaomi/sagit/sagit:7.1.1/NMF26X/V8.2.17.0.NCACNEC:user/release-keys"
-$RESETPROP "ro.bootimage.build.fingerprint" "Xiaomi/sagit/sagit:7.1.1/NMF26X/V8.2.17.0.NCACNEC:user/release-keys"
+$RESETPROP "ro.build.fingerprint" "samsung/zerofltexx/zeroflte:7.0/NRD90M/G920FXXU5EQBG:user/release-keys"
+$RESETPROP "ro.bootimage.build.fingerprint" "samsung/zerofltexx/zeroflte:7.0/NRD90M/G920FXXU5EQBG:user/release-keys"
 $RESETPROP "ro.build.type" "user"
 $RESETPROP "ro.build.tags" "release-keys"
 $RESETPROP "ro.build.selinux" "0"
