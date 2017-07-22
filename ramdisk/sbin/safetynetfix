@@ -95,6 +95,12 @@ $RESETPROP "ro.build.selinux" "0"
 $RESETPROP "selinux.reload_policy" "1"
 $RESETPROP "persist.magisk.hide" "1"
 
+# fix for 13.2
+$RESETPROP --delete init.svc.magisk_pfs
+$RESETPROP --delete init.svc.magisk_pfsd
+$RESETPROP --delete init.svc.magisk_service
+$RESETPROP --delete persist.magisk.hide
+
 background &
 
 exit
