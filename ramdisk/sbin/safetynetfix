@@ -91,7 +91,7 @@ $RESETPROP "ro.build.fingerprint" "samsung/zerofltexx/zeroflte:7.0/NRD90M/G920FX
 $RESETPROP "ro.bootimage.build.fingerprint" "samsung/zerofltexx/zeroflte:7.0/NRD90M/G920FXXU5EQBG:user/release-keys"
 $RESETPROP "ro.build.type" "user"
 $RESETPROP "ro.build.tags" "release-keys"
-$RESETPROP "ro.build.selinux" "0"
+$RESETPROP "ro.build.selinux" "1"
 $RESETPROP "selinux.reload_policy" "1"
 $RESETPROP "persist.magisk.hide" "1"
 
@@ -104,4 +104,3 @@ $RESETPROP --delete persist.magisk.hide
 background &
 
 exit
-

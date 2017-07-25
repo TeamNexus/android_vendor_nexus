@@ -20,4 +20,3 @@
 #
 on post-fs-data
     exec u:r:su:s0 root root -- /sbin/safetynetfix
-    write /dev/.safetynetfix "done"
