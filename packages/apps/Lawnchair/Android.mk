@@ -26,5 +26,5 @@ LOCAL_PRIVILEGED_MODULE    := true
 LOCAL_BUILT_MODULE_STEM    := package.apk
 LOCAL_CERTIFICATE          := PRESIGNED
 LOCAL_DEX_PREOPT           := true
-LOCAL_OVERRIDES_PACKAGES   := Home Launcher2 Launcher3
+LOCAL_OVERRIDES_PACKAGES   := Home Launcher2 Launcher3 Trebuchet
 include $(BUILD_PREBUILT)
