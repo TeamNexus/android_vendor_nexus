@@ -19,4 +19,9 @@
 # directly integrated into the ramdisk
 #
 on post-fs-data
-    exec u:r:su:s0 root root -- /sbin/safetynetfix
+	# Set default options for USNF
+	setprop "persist.usnf.fingerprint" "0"
+	setprop "persist.usnf.universalhide" "1"
+
+	# Launch USNF
+    exec u:r:su:s0 root root -- /sbin/usnf
