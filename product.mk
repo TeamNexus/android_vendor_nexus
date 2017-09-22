@@ -44,7 +44,7 @@ endif
 
 ##################
 # microG
-include $(LOCAL_PATH)/packages/microg/product.mk
+# include $(LOCAL_PATH)/packages/microg/product.mk
 
 ##################
 # Ramdisk
