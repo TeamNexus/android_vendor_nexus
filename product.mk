@@ -44,13 +44,7 @@ endif
 
 ##################
 # microG
-PRODUCT_PACKAGES += \
-    GmsCore \
-    GsfProxy \
-    LegacyNetworkLocation \
-    NetworkLocation \
-    RemoteDroidGuard \
-    UnifiedNlp
+include $(LOCAL_PATH)/packages/microg/product.mk
 
 ##################
 # Ramdisk

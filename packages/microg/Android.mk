@@ -15,30 +15,4 @@
 #
 
 LOCAL_PATH := $(call my-dir)
-BUILD_PREBUILT_MICROG := $(LOCAL_PATH)/options.mk
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := GmsCore
-include $(BUILD_PREBUILT_MICROG)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := GsfProxy
-include $(BUILD_PREBUILT_MICROG)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := LegacyNetworkLocation
-include $(BUILD_PREBUILT_MICROG)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := NetworkLocation
-include $(BUILD_PREBUILT_MICROG)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := RemoteDroidGuard
-include $(BUILD_PREBUILT_MICROG)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := UnifiedNlp
-include $(BUILD_PREBUILT_MICROG)
-
-BUILD_PREBUILT_MICROG :=
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
