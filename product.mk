@@ -43,6 +43,16 @@ PRODUCT_COPY_FILES += \
 endif
 
 ##################
+# microG
+PRODUCT_PACKAGES += \
+    GmsCore \
+    GsfProxy \
+    LegacyNetworkLocation \
+    NetworkLocation \
+    RemoteDroidGuard \
+    UnifiedNlp
+
+##################
 # Ramdisk
 PRODUCT_PACKAGES += \
 	init.nexus.rc \
