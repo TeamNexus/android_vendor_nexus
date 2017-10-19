@@ -20,6 +20,7 @@ LOCAL_PATH=vendor/nexus
 # Applications
 PRODUCT_PACKAGES += \
     Firefox \
+    Lawnchair \
     TheNexus
 
 ##################
