@@ -25,10 +25,8 @@ PRODUCT_PACKAGES += \
 
 ##################
 # Boot-Animation
-ifneq ($(NEXUS_VERSION),)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/bootanimation-1.zip:system/media/bootanimation.zip
-endif
+    $(LOCAL_PATH)/media/bootanimation-3.zip:system/media/bootanimation.zip
 
 ##################
 # F-Droid
