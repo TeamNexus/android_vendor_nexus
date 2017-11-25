@@ -1,0 +1,13 @@
+# primary SU-daemon
+service nexussud /system/xbin/nexussu --daemon
+    user root
+    group root
+    seclabel u:r:su:s0
+
+# Disabled
+on property:persist.sys.nexussud.enabled=0
+    stop nexussud
+
+# Enabled
+on property:persist.sys.nexussud.enabled=1
+    start nexussud
