@@ -35,13 +35,6 @@ PRODUCT_PACKAGES += \
     FDroidPrivilegedExtension
 
 ##################
-# Magisk (AOKP does not support Magisk)
-ifeq ($(AOKP_VERSION),)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/addons/magisk.zip:system/addon.d/magisk.zip
-endif
-
-##################
 # microG
 # include $(LOCAL_PATH)/packages/microg/product.mk
 
@@ -54,30 +47,3 @@ PRODUCT_PACKAGES += \
 # Substratum
 PRODUCT_PACKAGES += \
     Substratum
-
-ifneq ($(NEXUS_VERSION),)
-PRODUCT_PACKAGES += \
-    ThemeInterfacer
-endif
-
-##################
-# TheNexus OTA
-ifneq ($(NEXUS_VERSION),)
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.nexus.otarom=NexusOS
-endif
-
-ifneq ($(RR_VERSION),)
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.nexus.otarom=ResurrectionRemix
-endif
-
-ifneq ($(AOKP_VERSION),)
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.nexus.otarom=AOKP
-endif
-
-ifneq ($(AICP_VERSION),)
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.nexus.otarom=AICP
-endif
