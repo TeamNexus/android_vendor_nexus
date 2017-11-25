@@ -48,8 +48,7 @@ endif
 ##################
 # Ramdisk
 PRODUCT_PACKAGES += \
-	init.nexus.rc \
-	usnf
+	init.nexus.rc
 
 ##################
 # Substratum
