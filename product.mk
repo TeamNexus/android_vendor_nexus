@@ -45,11 +45,6 @@ PRODUCT_PACKAGES += \
 	init.nexus.rc
 
 ##################
-# Superuser
-PRODUCT_PACKAGES += \
-	nexussu
-
-##################
 # Substratum
 PRODUCT_PACKAGES += \
     Substratum
