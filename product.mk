@@ -22,7 +22,6 @@ PRODUCT_PACKAGES += \
     Firefox \
     Lawnchair \
     SysLog \
-    TheNexus \
 	WakeBlock
 
 ##################
