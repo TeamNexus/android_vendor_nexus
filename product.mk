@@ -22,7 +22,8 @@ PRODUCT_PACKAGES += \
     Firefox \
     Lawnchair \
     SysLog \
-    TheNexus
+    TheNexus \
+	WakeBlock
 
 ##################
 # Boot-Animation
