@@ -16,10 +16,5 @@
 
 LOCAL_PATH=vendor/nexus
 
-##################
-# Superuser
-ifneq ($(AOKP_VERSION),)
+# Always build with su-binary
 WITH_SU=true
-else ifneq ($(AICP_VERSION),)
-WITH_SU=true
-endif
