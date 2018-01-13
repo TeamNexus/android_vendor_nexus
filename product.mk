@@ -55,4 +55,4 @@ PRODUCT_PACKAGES += \
     su
 
 PRODUCT_COPY_FILES += \
-    system/extras/su/superuser.rc:system/etc/init/superuser.rc
+    $(LOCAL_PATH)/su/superuser.rc:system/etc/init/superuser.rc
