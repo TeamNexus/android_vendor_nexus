@@ -48,3 +48,8 @@ PRODUCT_PACKAGES += \
 # Substratum
 PRODUCT_PACKAGES += \
     Substratum
+
+##################
+# Superuser-workaround
+PRODUCT_COPY_FILES += \
+    system/extras/su/superuser.rc:system/etc/init/superuser.rc
