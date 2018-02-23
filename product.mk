@@ -21,8 +21,8 @@ LOCAL_PATH=vendor/nexus
 PRODUCT_PACKAGES += \
     Firefox \
     Lawnchair \
-    SysLog \
-	WakeBlock
+    OpenCamera \
+    SysLog
 
 ##################
 # Boot-Animation
