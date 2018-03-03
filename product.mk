@@ -20,7 +20,6 @@ LOCAL_PATH=vendor/nexus
 # Applications
 PRODUCT_PACKAGES += \
     Firefox \
-    Lawnchair \
     OpenCamera \
     SysLog
 
@@ -43,11 +42,6 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
 	init.nexus.rc
-
-##################
-# Substratum
-PRODUCT_PACKAGES += \
-    Substratum
 
 ##################
 # Superuser
