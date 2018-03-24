@@ -48,6 +48,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Substratum
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/addons/andromeda/nexus-andromeda:system/xbin/nexus-andromeda \
+    $(LOCAL_PATH)/addons/andromeda/nexus-andromeda.rc:system/etc/init/nexus-andromeda.rc
+
 ##################
 # Superuser
 PRODUCT_PACKAGES += \

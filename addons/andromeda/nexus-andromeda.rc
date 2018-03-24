@@ -1,0 +1,3 @@
+# Launch Andromeda Background Service
+on property:init.svc.bootanim=stopped
+	exec u:r:su:s0 root root -- /system/xbin/nexus-andromeda

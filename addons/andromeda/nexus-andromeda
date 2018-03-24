@@ -1,0 +1,35 @@
+#!/system/bin/sh
+
+# Check for pokemontotalwar's Andromeda-Enabler
+if [ -f /system/xbin/andromeda ]; then
+	# That module already does the job, we don't need to
+	exit 0
+fi
+
+# Grab full URI of Andromeda
+andromeda_path=$(pm path projekt.andromeda)
+
+# Make sure it's installed
+if [ "$andromeda_path" == "" ]; then
+	# Sad, it's not installed...
+	exit 0
+fi
+
+# Make sure activity is stopped
+am force-stop projekt.substratum
+
+# Kill Andromeda if its already running
+andromeda_pid=$(pidof andromeda)
+if [ "$andromeda_pid" != "" ]; then
+	kill -9 $andromeda_pid
+fi
+
+# Remove the 'package:' prefix from the path
+andromeda_path=$(echo $andromeda_path | cut -d : -f 2 | sed s/\\r//g)
+
+# Allow running background
+appops set projekt.andromeda RUN_IN_BACKGROUND allow
+appops set projekt.substratum RUN_IN_BACKGROUND allow
+
+# Launch Andromeda-service
+CLASSPATH=$andromeda_path app_process /system/bin --nice-name=andromeda projekt.andromeda.Andromeda &
