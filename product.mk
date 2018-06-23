@@ -25,7 +25,7 @@ PRODUCT_PACKAGES += \
 ##################
 # Boot-Animation
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/bootanimation-3.zip:system/media/bootanimation.zip
+    $(LOCAL_PATH)/media/bootanimation-4.zip:system/media/bootanimation.zip
 
 ##################
 # F-Droid
